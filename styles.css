@@ -1,5 +1,6 @@
 body {
     font-family: 'roboto', sans-serif;
+    margin: 0;
 }
 
 .header,
@@ -7,9 +8,17 @@ body {
     background-color: #1f2937;
 }
 
+.header {
+    padding-left: 250px;
+    padding-right: 250px;
+    padding-top: 20px;
+    padding-bottom: 150px;
+}
+
 .logo {
     font-size: 24px;
     color: #f9faf8;
+    font-weight: 900;
 }
 
 .hero-primary {
@@ -26,11 +35,58 @@ a {
     color: #e5e7eb;
 }
 
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.navigation ul {
+    display: flex;
+    gap: 10px;
+}
+
+.hero {
+    display: flex;
+}
+
+.hero-secondary {
+    margin-bottom: 10px;
+}
+
 .hero-image {
     width: 500px;
     height: 200px;
-    background-color: rgb(131, 124, 124);
+    background-color: rgb(107, 120, 129);
     color: #e5e7eb;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.body-info {
+    padding-left: 300px;
+    padding-right: 300px;
+    padding-top: 30px;
+    padding-bottom: 80px;
+    text-align: center;
+}
+
+.body-head {
+    margin-bottom: 25px;
+}
+
+.info-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .info-image {
@@ -40,15 +96,29 @@ a {
     border-radius: 12px;
 }
 
+.info p {
+    font-weight: lighter;
+    width: 150px;
+    color: #5b5d61;
+}
+
 .testimonial {
     background-color: #e5e7eb;
+    padding-left: 300px;
+    padding-right: 300px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .quote {
     font-size: 36px;
     font-style: italic;
-    font-weight: lighter;
+    font-weight: 500;
     color: #1f2937;
+}
+
+.quote-attr {
+    text-align: right;
 }
 
 .body-head,
@@ -68,17 +138,34 @@ button {
     font-size: 18px;
 }
 
+.call-to-action {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
 .action-box button {
     border: 2px solid white;
 }
 
 .action-box {
     background-color: #3882f6;
+    padding: 50px 100px;
+    border-radius: 12px;
+    display: flex;
+    gap: 200px;
 }
 
 .action-header {
     color: #f9faf8;
     font-weight: 900;
+}
+
+.footer {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 ul {
